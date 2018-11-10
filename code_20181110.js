@@ -5,6 +5,18 @@ let x = 0
 let y = 0
 let counter = 0
 let tenminutes = 0
+tenminutes = 0
+counter = 0
+y = 0
+x = 0
+minutes = 10
+runtime = 2000
+offswitch = false
+
+led.enable(true)
+led.setBrightness(255)
+basic.showString("Time")
+
 input.onButtonPressed(Button.A, function () {
     led.enable(true)
     led.setBrightness(255)
@@ -85,13 +97,3 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 
-led.enable(true)
-led.setBrightness(255)
-tenminutes = 0
-counter = 0
-y = 0
-x = 0
-minutes = 10
-runtime = 2000
-offswitch = false
-basic.showString("Time")
